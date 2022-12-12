@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: #B0D8DA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialog {
+    position: absolute;
+    top: 150px;
+    bottom: 150px;
+    left: 150px;
+    right: 150px;
+}
+
+.left-section {
+    height: 100%;
+    width: 35%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section > img {
+    margin-left: 100px;
+    height: 500px;
+}
+
+.name-usn {
+    color: #fff;
+    font-size: 24px;
+    line-height: 35px;
+    font-style: normal;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    width: 364px;
+}
+
+.container > img {
+    height: 85vh;
+    transform: rotate(-7.5deg);
+    z-index: 100;
+    position: relative;
+    bottom: -50px;
+}
+
+.right-section {
+    background-color: #fff;
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 65%;
+}
+
+.header {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: 217px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+.social-login {
+    margin-left: 217px;
+    width: 450px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+.google {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border: 1px solid #E5E5E5;
+    border-radius: 9px;
+    padding-right: 5px;
+    letter-spacing: 0.08em;
+}
+
+.facebook {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border: 1px solid #E5E5E5;
+    border-radius: 9px;
+    padding-right: 5px;
+    letter-spacing: 0.08em;
+}
+
+.google > img {
+    padding-left: 5px;
+    padding-right: 6px;
+}
+
+.facebook > img {
+    padding-left: 5px;
+    padding-right: 6px;
+}
+
+.or-section {
+    margin-left: 417px;
+    margin-bottom: 40px;
+}
+
+
+.form {
+    margin-left: 217px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.radio-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 460px;
+}
+
+.radio-section > label {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warn {
+    display: none;
+    padding-left: 15px;
+    font-size: 10px;
+    color: red;
+
+}
+
+.login {
+    margin-left: 217px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #868686;
+    width: 450px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    letter-spacing: 0.08em;
+    color: #868686;
+}
+
+.input-red {
+    border-bottom: 1px solid red;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 450px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    padding: 5px;
+    background: #1899d6;
+    border-radius: 7px;
+    height: 34px;
+    margin-top: 28px;
+    margin-bottom: 21px;
+    color: #fff;
+}

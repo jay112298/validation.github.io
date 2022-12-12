@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <p class="name-usn" ><img src="./assets/object.svg" /><br>Designed by <br>Jitendra Asole, ME21D031</p>
+            <img src="./assets/background.png" alt="Illustration">
+        </div>
+        <div class="right-section">
+            <div class="header">Create Account</div>
+            <div class="social-login">
+                <div class="google"><img src="./assets/google.svg" />Sign up with Google</div>
+                <div class="facebook"><img src="./assets/facebook.svg" />Sign up with Facebook</div>
+            </div>
+            <div class="or-section">-OR-</div>
+            <div class="form">
+                <input type="text" placeholder="Full Name" id="name-inp" onblur="validateName()" >
+                    <div id="name-warn" class="warn"></div>
+                <input type="email" name="email" id="email-inp" id="email-inp" onblur="validateMail()" placeholder="Email">
+                    <div id="email-warn" class="warn"></div>
+                <div class="radio-section" onmouseleave="validateGender()" onblur="validateGender()">
+                    <label>
+                        <input type="radio" name="gender" id="" value="male">
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="">
+                        Female
+                    </label>
+                </div>
+                    <div id="gender-warn" class="warn"></div>
+                <input type="password" id="pass-inp" placeholder="Password" onblur="validatePass()">
+                    <div id="pass-warn" class="warn"></div>
+                <button id="form-submit" onclick="submitForm()" >Create Account</button>
+            </div>
+            <div class="login">Already have an account? Log In</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
